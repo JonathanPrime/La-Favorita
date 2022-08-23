@@ -1145,6 +1145,14 @@ input.whats-input[type=text]:focus {
 }
 
 @media(max-width:768px) {
+  .heading .title-menu {
+    font-size: 4rem;
+  }
+
+  .heading .title-menu-contact {
+    font-size: 3rem;
+  }
+
   .home .image {
     display: none;
   }
