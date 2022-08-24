@@ -128,17 +128,6 @@ header {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-header .logo {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: #666;
-}
-
-header .logo i {
-  padding-right: .5rem;
-  color: var(--red);
-}
-
 .logo-desing {
   width: 5%;
   height: auto;
@@ -147,11 +136,13 @@ header .logo i {
 header .navbar a {
   font-size: 2rem;
   margin-left: 2rem;
-  color: #666;
+  color: var(--black);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header .navbar a:hover {
-  color: var(--red);
+  color: var(--palet-3);
 }
 
 #menu-bar {
@@ -168,9 +159,9 @@ header .navbar a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  height: 100vh;
-  z-index: 2;
+  min-height: 100vh;
   align-items: center;
+  z-index: 2;
   background: url(../images/banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -193,6 +184,7 @@ header .navbar a:hover {
 
 .home .content {
   flex: 1 1 40rem;
+  padding-top: 9.5rem;
 }
 
 .home .image {
@@ -341,7 +333,7 @@ header .navbar a:hover {
   text-align: center;
   font-family: 'CatalishHuntera';
   font-size: 8rem;
-  margin-top: -7rem;
+  margin-top: -5rem;
   color: var(--palet-2);
 }
 
@@ -1139,12 +1131,16 @@ input.whats-input[type=text]:focus {
 }
 
 @media (min-width: 769px) {
-  .home .image {
+  /* .home .image {
     display: block !important;
-  }
+  } */
 }
 
 @media(max-width:768px) {
+  .heading .sub-menu {
+    margin-top: -2rem;
+  }
+  
   .heading .title-menu {
     font-size: 4rem;
   }
@@ -1153,25 +1149,20 @@ input.whats-input[type=text]:focus {
     font-size: 3rem;
   }
 
-  .home .image {
+  /* .home .image {
     display: none;
-  }
+  } */
   
   .home .image {
     flex: 1 1 30rem;
   }
   
-  .home .image img {
-    width: 100%;
-    padding: 1rem;
-    animation: float 3s linear infinite;
-  }
   .home {
     background-position: left;
   }
   .about {
     flex-direction: column;
-    padding-top: 19rem;
+    padding-top: 5rem;
   }
   .about-info {
     flex-direction: column;
@@ -1215,11 +1206,7 @@ input.whats-input[type=text]:focus {
 @media(max-width:500px) {
 
   .home .content {
-    flex: 1 1 24rem;
-  }
-  
-  .home .image {
-    flex:none !important;
+    padding-top: 15.5rem;
   }
 
 }
