@@ -105,6 +105,23 @@ section {
   z-index: -1;
 }
 
+.btn-contact {
+  display: inline-block !important;
+  margin-top: 1rem !important;
+  cursor: pointer !important; 
+  color:  var(--palet-2) !important;
+  border: 0.2rem solid rgb(238, 131, 32) !important;
+  background: no-repeat !important;
+  font-size: 1.7rem !important;
+  border-radius: 1rem !important;
+  padding: 1rem 3rem !important;
+}
+
+.btn-contact:hover {
+  color: var(--white) !important;
+  background:  var(--palet-3) !important;
+}
+
 .btn:hover::before {
   width: 100%;
   left: 0;
@@ -134,15 +151,14 @@ header {
 }
 
 header .navbar a {
-  font-size: 2rem;
+  font-size: 18px;
   margin-left: 2rem;
-  color: var(--black);
+  color: var(--palet-3);
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 header .navbar a:hover {
-  color: var(--palet-3);
+  color: var(--palet-2);
 }
 
 #menu-bar {
